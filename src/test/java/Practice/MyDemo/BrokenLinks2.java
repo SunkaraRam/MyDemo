@@ -12,7 +12,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class BrokenLinks {
+public class BrokenLinks2 {
 
 	public static void main(String[] args) throws MalformedURLException, IOException, InterruptedException {
 		
@@ -34,14 +34,14 @@ public class BrokenLinks {
 		
 		for (int i = 0; i < allLinks.size(); i++) {
 			
-//			if (allLinks.get(i).getAttribute("href")!=null &&(!allLinks.get(i).getAttribute("href").contains("javascript"))) {
-//				
-//				activeLinks.add(allLinks.get(i));
-//				
-//			}else {
-//				deactiveLinks.add(allLinks.get(i));
-//			}
-//			
+			if (allLinks.get(i).getAttribute("href")!=null &&(!allLinks.get(i).getAttribute("href").contains("javascript"))) {
+				
+				activeLinks.add(allLinks.get(i));
+				
+			}else {
+				deactiveLinks.add(allLinks.get(i));
+			}
+			
 		}
 		
 		System.out.println("All Links  ----->" + allLinks.size());
